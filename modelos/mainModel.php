@@ -83,4 +83,25 @@
             $cadena = trim($cadena);
             return $cadena;
         }
+
+        /********** Función verificar datos **********/
+        protected static function verificar_datos($filtro, $cadena) {
+            // https://www.php.net/manual/es/function.preg-match.php
+            if (preg_match("/^" . $filtro . "$/", $cadena)) {
+                return false; // La cadena no tiene ningun error, cumple con la expresión regular
+            }else {
+                return true; // No coincide la cadena con el filtro 
+            }
+        }
+
+        /********** Función verificar fechas **********/
+        protected static function verificar_fecha($fecha) {
+            // https://www.php.net/manual/es/function.checkdate.php
+            $valores = explode("-", $fecha);
+            if (count($valores) == 3 && checkdate($valores[1], $valores[2], $valores[0] )) {
+                return false; // No tiene errores la fecha, si coincide con el formato solicitado
+            }else {
+                return true; // Si tiene errores la fecha, no coincide con el formato solicitado
+            }
+        }
     }
