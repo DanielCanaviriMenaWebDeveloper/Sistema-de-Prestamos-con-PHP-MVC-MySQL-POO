@@ -14,3 +14,5 @@
     });
 </script>
 <script src="<?php echo SERVERURL; ?>vistas/js/main.js"></script>
+<!-- Custom JS -->
+<script src="<?php echo SERVERURL; ?>vistas/js/alertas.js"></script>
