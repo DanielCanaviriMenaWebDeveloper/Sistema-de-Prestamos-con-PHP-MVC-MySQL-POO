@@ -1,5 +1,5 @@
 const formularios_ajax = document.querySelectorAll(".FormularioAjax");
-console.log(formularios_ajax);
+/* console.log(formularios_ajax); */
 
 function enviar_formulario_ajax(e) {
     e.preventDefault(); // Previene que se envie la información del formulario a la URL que apunta el atributo action
@@ -95,4 +95,4 @@ function alertas_ajax(alerta) { // Recibe un arreglo de datos (JSON) como parame
     }
 }
 
-console.log("hola mundo");
+/* console.log("hola mundo"); */
