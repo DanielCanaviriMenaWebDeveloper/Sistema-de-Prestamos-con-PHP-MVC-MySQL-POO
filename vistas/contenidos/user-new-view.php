@@ -24,7 +24,7 @@
 
 <!-- Content -->
 <div class="container-fluid">
-    <form class="form-neon FormularioAjax" action="" method="POST" data-form="save" autocomplete="off">
+    <form class="form-neon FormularioAjax" action="<?php echo SERVERURL ?>ajax/usuarioAjax.php" method="POST" data-form="save" autocomplete="off">
         <!-- Información Personal -->
         <fieldset>
             <legend><i class="far fa-address-card"></i> &nbsp; Información personal</legend>

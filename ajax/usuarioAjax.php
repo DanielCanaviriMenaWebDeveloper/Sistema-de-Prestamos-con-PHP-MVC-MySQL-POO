@@ -6,11 +6,15 @@
 
     require_once "../config/APP.php";
 
-    if (false) {
+    if (isset($_POST['usuario_dni_reg'])) {
+        
         /********** Instancia al Controlador **********/
         require_once "../controladores/usuarioControlador.php";
         $ins_usuario = new usuarioControlador();
         
+        if (isset($_POST['usuario_dni_reg']) && isset($_POST['usuario_nombre_reg'])) {
+
+        }
 
 
     }else {
